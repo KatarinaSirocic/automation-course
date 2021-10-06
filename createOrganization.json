@@ -8,15 +8,15 @@
     "addNewBoardButton" : "button[class='vs-c-btn vs-c-btn--primary vs-c-btn--spaced vs-c-btn--spaced-sm vs-c-btn--spaced-no-icon vs-u-text--uppercase']",
 
     "organizationSideMenu" : {
-        "boards" : "div > a[href='/organizations/1507/boards']",
-        "projects" : "div > a[href='/organizations/1507/projects']",
-        "invoicing" : "div > a[href='/organizations/1507/invoice']",
-        "clients" : "div > a[href='/organizations/1507/clients']",
-        "worklogs" : "div > a[href='/organizations/1507/worklogs']",
-        "team" : "div > a[href='/organizations/1507/team']",
-        "reports" : "div > a[href='/organizations/1507/reports']",
+        "boards" : "ul[class='vs-c-list']  > li:nth-of-type(1) > span > div > a[class='vs-c-site-logo']",
+        "projects" : "ul[class='vs-c-list']  > li:nth-of-type(2) > span > div > a[class='vs-c-site-logo']",
+        "invoicing" : "ul[class='vs-c-list']  > li:nth-of-type(3) > span > div > a[class='vs-c-site-logo']",
+        "clients" : "ul[class='vs-c-list']  > li:nth-of-type(4) > span > div > a[class='vs-c-site-logo']",
+        "worklogs" : "ul[class='vs-c-list']  > li:nth-of-type(5) > span > div > a[class='vs-c-site-logo']",
+        "team" : "ul[class='vs-c-list']  > li:nth-of-type(6) > span > div > a[class='vs-c-site-logo']",
+        "reports" : "ul[class='vs-c-list']  > li:nth-of-type(7) > span > div > a[class='vs-c-site-logo']",
         "configureOrganization" : {
-            "configureButton" : "a[href='/organizations/1507/settings']",
+            "configureButton" : "a[class='vs-c-site-logo router-link-exact-active router-link-active']",
             "uploadLogo" : "div[class='vs-c-img--avatar vs-u-img--round']",
             "nameInput" : "input[name='name']",
             "updateNameButton" : "button[class='vs-c-btn vs-c-btn--primary vs-c-btn--spaced vs-u-font-weight-bold vs-c-btn-auth--top-gap vs-c-btn--disabled vs-c-btn--disabled-border']",
