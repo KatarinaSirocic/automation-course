@@ -1,0 +1,35 @@
+{
+    "selectOrganization" : "div[class='el-input']",
+    "nameInput" : "input[name='name']",
+    "cancelButton" : "button[name='prev_btn']",
+    "nextButton" : "button[name='prev_btn']",
+    "xButton" : "button[name='close-new-board-modal-btn']",
+    "scrumRadioButton" : "span[name='type_scrum']",
+    "kanbanRadioButton" : "input[id='kanban-board-radio']",
+    "uploadFile" : "input[name='file']",
+
+    "boradSideMenu" : {
+        "productBacklog" : "a[href='/boards/947'] > svg[class='vs-c-site-sign vs-c-project-menu-icon']",
+        "stats" : "a[href='/boards/947/stats']",
+        "history" : "a[href='/boards/947/history']",
+        "labels" : "a[href='/boards/947/labels'] ",
+        "files" : "a[href='/boards/947/files'] ",
+        "documents" : "a[href='/boards/947/documents']",
+        "worklogs" : "a[href='/boards/947/worklogs']",
+        "team" : "a[href='/boards/947/team']", 
+        "trash" : "a[href='/boards/947/trash']",
+        "configureBoard" :  {
+            "configureBoardButton" : "a[href='/boards/947/settings']",
+            "boardTitleInput": "input[name='name']",
+            "boardCodeInput" : "input[name='code']",
+            "boradDescription" : "textarea[name='description']",
+            "updateBoardButton" : "span[class='vs-c-loading-spinner vs-c-submit-button-loading']",
+            "myOrganizadtionDropdown" : ".el-dropdown.el-select.vs-c-dropdown-underline > .el-input > .el-input__inner",
+            "boradTypeDropdown" : "div[class='vs-c-dropdown-underline el-dropdown'] > button[class='vs-c-btn vs-c-btn--link']",
+            "uploadLogo" : "div[class='vs-c-img--avatar vs-c-img--board-avatar-lg']",
+            "archiveBoardButton" : "button[class='vs-c-btn vs-c-btn--success vs-c-btn--spaced']",   
+            "deteleBoardButton" : "button[class='vs-c-btn vs-c-btn--warning vs-c-btn--spaced']" 
+        }
+
+    }
+}

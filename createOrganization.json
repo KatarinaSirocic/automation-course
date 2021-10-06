@@ -1,0 +1,34 @@
+{
+    "nameInput" : "input[name='name']",
+    "cancelButton" : "button[name='prev_btn']",
+    "nextButton" : "button[name='next_btn']",
+    "xButton" : "button[name='close-new-board-modal-btn']",
+    "uploadOrganizationLogo" : "div[class='el-upload-dragger']",
+    "importButton" : "a[href='/organizations/1517/import-board']",
+    "addNewBoardButton" : "button[class='vs-c-btn vs-c-btn--primary vs-c-btn--spaced vs-c-btn--spaced-sm vs-c-btn--spaced-no-icon vs-u-text--uppercase']",
+
+    "organizationSideMenu" : {
+        "boards" : "div > a[href='/organizations/1507/boards']",
+        "projects" : "div > a[href='/organizations/1507/projects']",
+        "invoicing" : "div > a[href='/organizations/1507/invoice']",
+        "clients" : "div > a[href='/organizations/1507/clients']",
+        "worklogs" : "div > a[href='/organizations/1507/worklogs']",
+        "team" : "div > a[href='/organizations/1507/team']",
+        "reports" : "div > a[href='/organizations/1507/reports']",
+        "configureOrganization" : {
+            "configureButton" : "a[href='/organizations/1507/settings']",
+            "uploadLogo" : "div[class='vs-c-img--avatar vs-u-img--round']",
+            "nameInput" : "input[name='name']",
+            "updateNameButton" : "button[class='vs-c-btn vs-c-btn--primary vs-c-btn--spaced vs-u-font-weight-bold vs-c-btn-auth--top-gap vs-c-btn--disabled vs-c-btn--disabled-border']",
+            "mondayCheckbox" : "div:nth-of-type(1) > .vs-c-checkbox-list-item > .vs-c-checkbox-list-item__check-container > .vs-c-checkbox.vs-c-checkbox--dark.vs-c-checkbox--md > .vs-c-checkbox-check",
+            "calendarStartDay" : "button[class='vs-c-btn vs-c-btn--link']",
+            "vacationDaysInput" : "input[name='vacationDays']",
+            "numberOfWorkingMonthsInput" : "input[name='numOfWorkingMonthsForAdditionalDays']",
+            "additionalVacantionDaysInput" : "input[name='additionalVacationDays']",
+            "expirationPeriodDropdown" : ".el-select.vs-c-new-board-select > .el-input > .el-input__inner",
+            "updateVacationDaysButton" : ".vs-c-config-vacation-days .vs-c-btn-auth--top-gap"
+
+        }
+    }
+
+}

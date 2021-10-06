@@ -1,0 +1,11 @@
+{
+    "emailInput" : "input[type='email']",
+    "passwordInput": "input[type='password']",
+    "numberOfUsersInput" : "input[name='number_of_users']",
+    "checkbox" : "span[class='vs-c-checkbox-check']",
+    "monthlyOption" : ".vs-c-switch-pricing-plan-list > div:nth-of-type(1) > p",
+    "annuallyOption" : ".vs-c-switch-pricing-plan-list > div:nth-of-type(2) > p",
+    "submitButton" : "button[type='submit']",
+    "loginLink" : "a[href='/login']"
+    
+}
