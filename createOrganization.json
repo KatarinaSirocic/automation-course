@@ -4,7 +4,7 @@
     "nextButton" : "button[name='next_btn']",
     "xButton" : "button[name='close-new-board-modal-btn']",
     "uploadOrganizationLogo" : "div[class='el-upload-dragger']",
-    "importButton" : "a[href='/organizations/1517/import-board']",
+    "importButton" : "a[class='vs-c-btn vs-c-btn--default vs-c-btn--spaced vs-c-btn--spaced-sm vs-u-color--base']",
     "addNewBoardButton" : "button[class='vs-c-btn vs-c-btn--primary vs-c-btn--spaced vs-c-btn--spaced-sm vs-c-btn--spaced-no-icon vs-u-text--uppercase']",
 
     "organizationSideMenu" : {
