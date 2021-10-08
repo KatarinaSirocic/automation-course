@@ -1,0 +1,13 @@
+{
+    "myOrganizations" : "img[class='vs-c-site-sign']",
+    "star" : "svg[class='vs-c-icon vs-u-color--white-transp']",
+    "searchButton" : "div[class='vs-c-project-search'] > button[class='vs-c-btn vs-c-btn--link el-tooltip']",
+    "showFinishedSprints" : "button[name='show_finished_sprints']",
+    "showTableView" : ".vs-c-sprint-info > button:nth-of-type(2)",
+    "showCardsView" : ".vs-c-sprint-info > .el-tooltip.vs-c-btn.vs-c-btn--link",
+    "moreOptions" : "div[class='el-dropdown'] > button[class='vs-c-btn vs-c-btn--link el-tooltip']",
+    "showNotifications" : "button[class='vs-c-btn vs-c-btn--link']",
+    "howItWorks" : ".vs-c-project-search > .el-tooltip.vs-c-btn.vs-c-btn--link"
+
+
+}
