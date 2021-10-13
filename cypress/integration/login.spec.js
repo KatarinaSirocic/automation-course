@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 const signUpPage = require("../fixtures/signUpPage.json")
 //import signUpPage from "../fixtures/signUpPage.json"
 import data from "../fixtures/data.json"

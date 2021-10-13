@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 import createOrganization from "../fixtures/createOrganization.json"
 import loginPage from "../fixtures/loginPage.json"
 import data from "../fixtures/data.json"

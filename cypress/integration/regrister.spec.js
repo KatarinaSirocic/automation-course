@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 import signUpPage from "../fixtures/signUpPage.json"
 import loginPage from "../fixtures/loginPage.json"
 import data from "../fixtures/data.json"
