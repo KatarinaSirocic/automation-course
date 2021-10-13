@@ -1,10 +1,11 @@
-{
+{   
+    "addNewBoard": "div[class='vs-c-organization-boards__item--add-new']",
     "selectOrganization" : "div[class='el-input']",
     "nameInput" : "input[name='name']",
     "cancelButton" : "button[name='prev_btn']",
-    "nextButton" : "button[name='prev_btn']",
+    "nextButton" : "button[name='next_btn']",
     "xButton" : "button[name='close-new-board-modal-btn']",
-    "scrumRadioButton" : "span[name='type_scrum']",
+    "scrumRadioButton" : "input[value='scrum_board']",
     "kanbanRadioButton" : "input[id='kanban-board-radio']",
     "uploadFile" : "input[name='file']",
 
@@ -19,7 +20,7 @@
         "team" : "ul[class='vs-c-list'] > li:nth-of-type(8) > span > div > a[class='vs-c-site-logo']", 
         "trash" : "ul[class='vs-c-list'] > li:nth-of-type(9) > span > div > a[class='vs-c-site-logo']",
         "configureBoard" :  {
-            "configureBoardButton" : "ul[class='vs-c-list'] > li:nth-of-type(10) > span > div > a[class='vs-c-site-logo']",
+            "configureBoardButton" : "ul[class='vs-c-list'] > li:nth-of-type(10)",
             "boardTitleInput": "input[name='name']",
             "boardCodeInput" : "input[name='code']",
             "boradDescription" : "textarea[name='description']",
@@ -28,8 +29,9 @@
             "boradTypeDropdown" : "div[class='vs-c-dropdown-underline el-dropdown'] > button[class='vs-c-btn vs-c-btn--link']",
             "uploadLogo" : "div[class='vs-c-img--avatar vs-c-img--board-avatar-lg']",
             "archiveBoardButton" : "button[class='vs-c-btn vs-c-btn--success vs-c-btn--spaced']",   
-            "deteleBoardButton" : "button[class='vs-c-btn vs-c-btn--warning vs-c-btn--spaced']" 
+            "deteleBoardButton" : "button[class='vs-c-btn vs-c-btn--warning vs-c-btn--spaced']",
+            "saveButton" : "button[name='save-btn']",
+            "cancelButton" : "button[name='cancel-btn']"
         }
-
     }
 }

@@ -1,9 +1,11 @@
 {
+    "addNewOrganization" : "div[class='vs-c-my-organization vs-c-my-organization--add-new not-sortable']",
     "nameInput" : "input[name='name']",
     "cancelButton" : "button[name='prev_btn']",
     "nextButton" : "button[name='next_btn']",
     "xButton" : "button[name='close-new-board-modal-btn']",
     "uploadOrganizationLogo" : "div[class='el-upload-dragger']",
+    "okButton" : "button[class='vs-c-btn vs-c-btn--primary vs-c-btn--lg vs-u-font-sm vs-c-modal--features-confirm-button']",
     "importButton" : "a[class='vs-c-btn vs-c-btn--default vs-c-btn--spaced vs-c-btn--spaced-sm vs-u-color--base']",
     "addNewBoardButton" : "button[class='vs-c-btn vs-c-btn--primary vs-c-btn--spaced vs-c-btn--spaced-sm vs-c-btn--spaced-no-icon vs-u-text--uppercase']",
 
@@ -27,8 +29,6 @@
             "additionalVacantionDaysInput" : "input[name='additionalVacationDays']",
             "expirationPeriodDropdown" : ".el-select.vs-c-new-board-select > .el-input > .el-input__inner",
             "updateVacationDaysButton" : ".vs-c-config-vacation-days .vs-c-btn-auth--top-gap"
-
         }
     }
-
 }

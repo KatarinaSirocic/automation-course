@@ -7,7 +7,6 @@
     "showCardsView" : ".vs-c-sprint-info > .el-tooltip.vs-c-btn.vs-c-btn--link",
     "moreOptions" : "div[class='el-dropdown'] > button[class='vs-c-btn vs-c-btn--link el-tooltip']",
     "showNotifications" : "button[class='vs-c-btn vs-c-btn--link']",
-    "howItWorks" : ".vs-c-project-search > .el-tooltip.vs-c-btn.vs-c-btn--link"
-
-
+    "howItWorks" : ".vs-c-project-search > .el-tooltip.vs-c-btn.vs-c-btn--link",
+    "logOutButton" : "button[class='vs-c-btn vs-c-btn--link vs-c-btn--danger']"
 }
