@@ -13,7 +13,7 @@ describe("CRUD Organization", () =>{
         cy.get(loginPage.logInButton).click()
     })
 
-    it("Start creating Organization, then cancel it", ()=>{
+    it("Cancel create Organization", ()=>{
         cy.get(createOrganization.addNewOrganization).click()
         cy.get(createOrganization.nameInput).type(data.organization.organizationName)
         cy.get(createOrganization.nextButton).click()
@@ -28,7 +28,7 @@ describe("CRUD Organization", () =>{
         cy.get(createOrganization.okButton).click()
     })
 
-    it("Start editing Organization Name, then cancel it", () =>{
+    it("Cancel edit Organization Name", () =>{
         cy.get(navigation.myOrganizations).click()
         cy.get(myOrganization.organizationTitle).contains(data.organization.organizationName).click()
         cy.get(myOrganization.organizationTitleEditMode).type(data.organization.changedOrganizationName)

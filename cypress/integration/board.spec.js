@@ -19,7 +19,7 @@ describe("CRUD Board", ()=>{
         cy.get(myOrganizations.organizationAvatar).click()
     })
 
-    it("Start creating new board, then cancel it",()=>{
+    it("Cancel create new board",()=>{
         cy.get(createOrganization.okButton).click()
         cy.get(createBoard.addNewBoard).click()
         cy.get(createBoard.nameInput).type(data.board.boardName)
@@ -38,14 +38,7 @@ describe("CRUD Board", ()=>{
         cy.get(createBoard.nextButton).click()
         cy.get(createBoard.nextButton).click()
         cy.get(createBoard.nextButton).click()
-        cy.get(navigation.myOrganizations).click()
-        // cy.get(myOrganizations.getBoard).should('be.visible').click()
     })
-
-    // it("Get board",()=>{
-    //     cy.get(navigation.myOrganizations).click()
-    //     cy.get(myOrganizations.getBoard).should('be.visible').click()
-    // })
 
     it("Edit board details",()=>{
         cy.get(createBoard.boradSideMenu.configureBoard.configureBoardButton).click()
@@ -55,7 +48,7 @@ describe("CRUD Board", ()=>{
         cy.get(createBoard.boradSideMenu.configureBoard.updateBoardButton).click({force: true})
     })
 
-    it("Start delete board, then cancel it",()=>{
+    it("Cancel delete board",()=>{
         cy.get(createBoard.boradSideMenu.configureBoard.deteleBoardButton).click()
         cy.get(createBoard.boradSideMenu.configureBoard.cancelButton).click()
     })
