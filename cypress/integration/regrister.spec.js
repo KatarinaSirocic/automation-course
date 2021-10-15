@@ -4,9 +4,9 @@ import data from "../fixtures/data.json"
 import sidebar from "../fixtures/sidebar.json"
 import navigation from "../fixtures/navigation.json"
 
-describe("Register", () =>{
+describe("Register", () => {
 
-    it("visit url", () =>{
+    it("visit url", () => {
         cy.visit("https://cypress-api.vivifyscrum-stage.com/pricing", {timeout: 30000});
     });
 
