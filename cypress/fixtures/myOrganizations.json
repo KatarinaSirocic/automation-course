@@ -1,0 +1,9 @@
+{
+    "organizationAvatar" : ".vs-c-my-organizations-item-wrapper > div:nth-of-type(1) .vs-c-img--avatar.vs-c-my-organization__avatar > span",
+    "organizationTitle" : "h2[class='vs-c-my-organization__title']",
+    "organizationTitleEditMode" : "input[name='change-organization-name']",
+    "confirmChangeNameButton" : "button[name='change-organization-name']",
+    "cancelChangeNameButton" : "button:nth-of-type(2) > .el-icon-close",
+    "archiveOrganization" : ".vs-c-my-organizations-item-wrapper > div:nth-of-type(2) span[title='Archive Organization']",
+    "getBoard" : ".vs-c-my-organization__boards > :nth-child(1) > .vs-c-img--avatar > span"
+}

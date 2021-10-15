@@ -1,0 +1,34 @@
+{
+    "user" : {
+        "email" : "seza6@gmail.com",
+        "password": "1234567",
+        "validNmberOfUsers" : "5"
+    },
+    "invalidUser" : {
+        "emptyEmail" : " ",
+        "emailMoreThen255char" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqewrewrwerwerwewrwerwerewrwerwerwerwerwerwerwerwerwerwerwerwerrrrrrrrrrrrrcupiditatenonprovident@gmail.com",
+        "wrongEmail" : "katarinasirocic@gmail.com",
+        "noBodyemail" : "@gmail.com",
+        "noAtSignEmail" : "katarina.sirocicgmail.com",
+        "noGmailEmail" : "katarina.sirocicgmail@",
+        "invalidNumberOfUsers" : "11",
+        "emptySpacePassword" : " ",
+        "wrongPassword" : "test"
+    },
+    "accountDetails":{
+        "firstName" : "This is first name",
+        "lastName" : "This is last name",
+        "companyName" : "This is company name",
+        "organizationName" : "This is Organization name"
+    },
+    "organization":{
+        "organizationName" : "Organization1",
+        "changedOrganizationName" : "123"
+    },
+    "board":{
+        "boardName": "Board 1",
+        "changedBoardName" : "Test Board",
+        "boardCode" : "001",
+        "boardDescription" : "This is description for testing purpose"
+    }
+}

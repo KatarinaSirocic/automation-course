@@ -9,6 +9,4 @@
     "twitterButton": "button[class ='vs-c-btn vs-c-btn--social-auth vs-c-btn--tw']",
     "regzenButton" : "vs-c-btn vs-c-btn--social-auth vs-c-btn--regzen",
     "signUpLink" : "a[href='https://cypress-api.vivifyscrum-stage.com/pricing']"
-
-
 }

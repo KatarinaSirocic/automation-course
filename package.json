@@ -1,0 +1,22 @@
+{
+  "name": "automation-course",
+  "version": "1.0.0",
+  "description": "automation course",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KatarinaSirocic/automation-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KatarinaSirocic/automation-course/issues"
+  },
+  "homepage": "https://github.com/KatarinaSirocic/automation-course#readme",
+  "dependencies": {
+    "cypress": "^8.5.0"
+  }
+}

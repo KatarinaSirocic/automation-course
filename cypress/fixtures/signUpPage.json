@@ -1,0 +1,16 @@
+{
+    "freeSignUp" : ".vsp-c-pricing-plan-list.vsp-c-pricing-plan-list--annual > li:nth-of-type(1) > a[title='Starter']",
+    "emailInput" : "input[type='email']",
+    "passwordInput": "input[type='password']",
+    "numberOfUsersInput" : "input[name='number_of_users']",
+    "checkbox" : "span[class='vs-c-checkbox-check']",
+    "monthlyOption" : ".vs-c-switch-pricing-plan-list > div:nth-of-type(1) > p",
+    "annuallyOption" : ".vs-c-switch-pricing-plan-list > div:nth-of-type(2) > p",
+    "submitButton" : "button[type='submit']",
+    "loginLink" : "a[href='/login']",
+    "firstName" : "input[name='first_name']",
+    "lastName" : "div[class='el-input'] > input[name='last_name']",
+    "companyName" : "input[name='company_name']",
+    "organizationName" : "input[name='organization_name']",
+    "cancelButton" : "button[class='vs-c-btn vs-c-btn--danger vs-c-btn--spaced vs-u-font-weight-bold vs-c-btn-auth--top-gap vs-u-gap--top-sm']"
+}
