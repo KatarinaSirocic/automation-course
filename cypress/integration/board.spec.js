@@ -5,21 +5,21 @@ import navigation from "../fixtures/navigation.json"
 import myOrganizations from "../fixtures/myOrganizations.json"
 import createBoard from "../fixtures/createBoard.json"
 
-describe("CRUD Board", ()=>{
+describe("CRUD Board", () => {
 
-    it("Login", ()=>{
+    it("Login", () => {
         cy.visit("/")
         cy.get(loginPage.emailInput).type(data.user.email)
         cy.get(loginPage.passwordInput).type(data.user.password)
         cy.get(loginPage.logInButton).click()
     })
 
-    it("Go to board creation", ()=>{
+    it("Go to board creation", () => {
         cy.get(navigation.myOrganizations).click()
         cy.get(myOrganizations.organizationAvatar).click()
     })
 
-    it("Cancel create new board",()=>{
+    it("Cancel create new board", () => {
         cy.get(createOrganization.okButton).click()
         cy.get(createBoard.addNewBoard).click()
         cy.get(createBoard.nameInput).type(data.board.boardName)
@@ -30,7 +30,7 @@ describe("CRUD Board", ()=>{
         cy.get(createBoard.xButton).click()
     })
 
-    it("Create new board",()=>{
+    it("Create new board", () => {
         cy.get(createBoard.addNewBoard).click()
         cy.get(createBoard.nameInput).type(data.board.boardName)
         cy.get(createBoard.nextButton).click()
@@ -40,7 +40,7 @@ describe("CRUD Board", ()=>{
         cy.get(createBoard.nextButton).click()
     })
 
-    it("Edit board details",()=>{
+    it("Edit board details", () => {
         cy.get(createBoard.boradSideMenu.configureBoard.configureBoardButton).click()
         cy.get(createBoard.boradSideMenu.configureBoard.boardTitleInput).clear().type(data.board.changedBoardName)
         cy.get(createBoard.boradSideMenu.configureBoard.boardCodeInput).clear().type(data.board.boardCode)
@@ -48,12 +48,12 @@ describe("CRUD Board", ()=>{
         cy.get(createBoard.boradSideMenu.configureBoard.updateBoardButton).click({force: true})
     })
 
-    it("Cancel delete board",()=>{
+    it("Cancel delete board", () => {
         cy.get(createBoard.boradSideMenu.configureBoard.deteleBoardButton).click()
         cy.get(createBoard.boradSideMenu.configureBoard.cancelButton).click()
     })
 
-    it("Delete board",()=>{
+    it("Delete board", () => {
         cy.get(createBoard.boradSideMenu.configureBoard.deteleBoardButton).click()
         cy.get(createBoard.boradSideMenu.configureBoard.saveButton).click()
         cy.get(createOrganization.okButton).click()

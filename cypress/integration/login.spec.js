@@ -1,14 +1,13 @@
 const signUpPage = require("../fixtures/signUpPage.json")
-//import signUpPage from "../fixtures/signUpPage.json"
 import data from "../fixtures/data.json"
 import sidebar from "../fixtures/sidebar.json"
 import navigation from "../fixtures/navigation.json"
 import loginPage from "../fixtures/loginPage"
 
 
-describe("Login", () =>{
+describe("Login", () => {
 
-    it("Visit url", () =>{
+    it("Visit url", () => {
         cy.visit("/", {timeout: 30000});
     });
 
@@ -47,7 +46,6 @@ describe("Login", () =>{
         cy.get(loginPage.passwordInput).clear().type(data.user.password)
         cy.get(loginPage.logInButton).click()
     })
-
 
     it("Valid login", () => {
         cy.get(loginPage.emailInput).clear().type(data.user.email)

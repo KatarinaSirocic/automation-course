@@ -10,60 +10,60 @@ describe("Register", () =>{
         cy.visit("https://cypress-api.vivifyscrum-stage.com/pricing", {timeout: 30000});
     });
 
-    it("Choose Starter", () =>{
+    it("Choose Starter", () => {
         cy.get(signUpPage.freeSignUp).click({force:true})
     });
 
-    it("Register: Empty email field", () =>{
+    it("Register: Empty email field", () => {
         cy.get(signUpPage.emailInput).should('be.visible').type(data.invalidUser.emptyEmail)
         cy.get(signUpPage.passwordInput).type(data.user.password)
         cy.get(signUpPage.numberOfUsersInput).type(data.user.validNmberOfUsers)
         cy.get(signUpPage.submitButton).click()
     })
 
-    it("Register: Email more then 255 characters", () =>{
+    it("Register: Email more then 255 characters", () => {
         cy.get(signUpPage.emailInput).should('be.visible').type(data.invalidUser.emailMoreThen255char)
         cy.get(signUpPage.passwordInput).type(data.user.password)
         cy.get(signUpPage.numberOfUsersInput).type(data.user.validNmberOfUsers)
         cy.get(signUpPage.submitButton).click()
     })
 
-    it("Register: No body email", () =>{
+    it("Register: No body email", () => {
         cy.get(signUpPage.emailInput).clear().type(data.invalidUser.noBodyemail)
         cy.get(signUpPage.emailInput).clear().type(data.user.password)
         cy.get(signUpPage.numberOfUsersInput).clear().type(data.user.validNmberOfUsers)
         cy.get(signUpPage.submitButton).click()
     })
 
-    it("Register: No @ sign email", () =>{
+    it("Register: No @ sign email", () => {
         cy.get(signUpPage.emailInput).clear().type(data.invalidUser.noAtSignEmail)
         cy.get(signUpPage.emailInput).clear().type(data.user.password)
         cy.get(signUpPage.numberOfUsersInput).clear().type(data.user.validNmberOfUsers)
         cy.get(signUpPage.submitButton).click()
     })
 
-    it("Register: Invalid password", () =>{
+    it("Register: Invalid password", () => {
         cy.get(signUpPage.emailInput).clear().type(data.user.email)
         cy.get(signUpPage.emailInput).clear().type(data.invalidUser.wrongPassword)
         cy.get(signUpPage.numberOfUsersInput).clear().type(data.user.validNmberOfUsers)
         cy.get(signUpPage.submitButton).click()
     })
 
-    it("Register: Empty password", () =>{
+    it("Register: Empty password", () => {
         cy.get(signUpPage.emailInput).clear().type(data.user.email)
         cy.get(signUpPage.emailInput).clear().type(data.invalidUser.emptySpacePassword)
         cy.get(signUpPage.numberOfUsersInput).clear().type(data.user.validNmberOfUsers)
         cy.get(signUpPage.submitButton).click()
     })
 
-    it("Register: Invalid Number of Users", () =>{
+    it("Register: Invalid Number of Users", () => {
         cy.get(signUpPage.emailInput).clear().type(data.user.email)
         cy.get(signUpPage.emailInput).clear().type(data.user.password)
         cy.get(signUpPage.numberOfUsersInput).clear().type(data.invalidUser.invalidNumberOfUsers)
         cy.get(signUpPage.submitButton).click()
     })
 
-    it("Register: Checkbox not checked", () =>{
+    it("Register: Checkbox not checked", () => {
         cy.get(signUpPage.emailInput).clear().type(data.user.email)
         cy.get(signUpPage.emailInput).clear().type(data.user.password)
         cy.get(signUpPage.numberOfUsersInput).clear().type(data.user.validNmberOfUsers)
@@ -71,13 +71,13 @@ describe("Register", () =>{
         cy.get(signUpPage.submitButton).click()
     })
 
-    it("Register: Valid registration", () =>{
+    it("Register: Valid registration", () => {
         cy.get(signUpPage.emailInput).should('be.visible').clear().type(data.user.email)
         cy.get(signUpPage.passwordInput).clear().type(data.user.password)
         cy.get(signUpPage.numberOfUsersInput).clear().type(data.user.validNmberOfUsers)
         cy.get(signUpPage.checkbox).click()
         cy.get(signUpPage.submitButton).click()
-        cy.get(sidebar.myAccount.account).click({force: true})
+        cy.get(sidebar.myAccount.account).click({force: true},{timeout: 30000})
         cy.get(sidebar.myAccount.profile).click()
         cy.get(navigation.logOutButton).click()
         cy.get(loginPage.emailInput).type(data.user.email)
