@@ -1,12 +1,13 @@
 {
-    "emailInput" : "input[type='email']",
-    "passwordInput": "input[type='password']",
-    "logInButton": "button[type='submit']",
-    "forgotPasswordLink": "a[href='/forgot-password']",
-    "backToHomeLink": "a[href='https://cypress-api.vivifyscrum-stage.com']",
-    "googleButton" : "button[class ='vs-c-btn vs-c-btn--social-auth vs-c-btn--gp disabled']",
-    "facebookButton" : "button[class ='vs-c-btn vs-c-btn--social-auth vs-c-btn--fb']",
-    "twitterButton": "button[class ='vs-c-btn vs-c-btn--social-auth vs-c-btn--tw']",
-    "regzenButton" : "vs-c-btn vs-c-btn--social-auth vs-c-btn--regzen",
-    "signUpLink" : "a[href='https://cypress-api.vivifyscrum-stage.com/pricing']"
+  "emailInput": "input[type='email']",
+  "passwordInput": "input[type='password']",
+  "logInButton": "button[type='submit']",
+  "forgotPasswordLink": "a[href='/forgot-password']",
+  "backToHomeLink": "a[href='https://cypress-api.vivifyscrum-stage.com']",
+  "googleButton": "button[class ='vs-c-btn vs-c-btn--social-auth vs-c-btn--gp disabled']",
+  "facebookButton": "button[class ='vs-c-btn vs-c-btn--social-auth vs-c-btn--fb']",
+  "twitterButton": "button[class ='vs-c-btn vs-c-btn--social-auth vs-c-btn--tw']",
+  "regzenButton": "vs-c-btn vs-c-btn--social-auth vs-c-btn--regzen",
+  "signUpLink": "a[href='https://cypress-api.vivifyscrum-stage.com/pricing']",
+  "emailPassCombinationIncorrect": "span[class='el-form-item__error']"
 }

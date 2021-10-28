@@ -1,37 +1,37 @@
-{   
-    "addNewBoard": "div[class='vs-c-organization-boards__item--add-new']",
-    "selectOrganization" : "div[class='el-input']",
-    "nameInput" : "input[name='name']",
-    "cancelButton" : "button[name='prev_btn']",
-    "nextButton" : "button[name='next_btn']",
-    "xButton" : "button[name='close-new-board-modal-btn']",
-    "scrumRadioButton" : "input[value='scrum_board']",
-    "kanbanRadioButton" : "input[id='kanban-board-radio']",
-    "uploadFile" : "input[name='file']",
+{
+  "addNewBoard": "div[class='vs-c-organization-boards__item--add-new']",
+  "selectOrganization": "div[class='el-input']",
+  "nameInput": "input[name='name']",
+  "cancelButton": "button[name='prev_btn']",
+  "nextButton": "button[name='next_btn']",
+  "xButton": "button[name='close-new-board-modal-btn']",
+  "scrumRadioButton": "input[value='scrum_board']",
+  "kanbanRadioButton": "input[id='kanban-board-radio']",
+  "uploadFile": "input[name='file']",
 
-    "boradSideMenu" : {
-        "productBacklog" : "ul[class='vs-c-list'] > li:nth-of-type(1) > span > div > a[class='vs-c-site-logo']",
-        "stats" : "ul[class='vs-c-list'] > li:nth-of-type(2) > span > div > a[class='vs-c-site-logo']",
-        "history" : "ul[class='vs-c-list'] > li:nth-of-type(3) > span > div > a[class='vs-c-site-logo']",
-        "labels" : "ul[class='vs-c-list'] > li:nth-of-type(4) > span > div > a[class='vs-c-site-logo']",
-        "files" : "ul[class='vs-c-list'] > li:nth-of-type(5) > span > div > a[class='vs-c-site-logo']",
-        "documents" : "ul[class='vs-c-list'] > li:nth-of-type(6) > span > div > a[class='vs-c-site-logo']",
-        "worklogs" : "ul[class='vs-c-list'] > li:nth-of-type(7) > span > div > a[class='vs-c-site-logo']",
-        "team" : "ul[class='vs-c-list'] > li:nth-of-type(8) > span > div > a[class='vs-c-site-logo']", 
-        "trash" : "ul[class='vs-c-list'] > li:nth-of-type(9) > span > div > a[class='vs-c-site-logo']",
-        "configureBoard" :  {
-            "configureBoardButton" : "ul[class='vs-c-list'] > li:nth-of-type(10)",
-            "boardTitleInput": "input[name='name']",
-            "boardCodeInput" : "input[name='code']",
-            "boradDescription" : "textarea[name='description']",
-            "updateBoardButton" : "span[class='vs-c-loading-spinner vs-c-submit-button-loading']",
-            "myOrganizadtionDropdown" : ".el-dropdown.el-select.vs-c-dropdown-underline > .el-input > .el-input__inner",
-            "boradTypeDropdown" : "div[class='vs-c-dropdown-underline el-dropdown'] > button[class='vs-c-btn vs-c-btn--link']",
-            "uploadLogo" : "div[class='vs-c-img--avatar vs-c-img--board-avatar-lg']",
-            "archiveBoardButton" : "button[class='vs-c-btn vs-c-btn--success vs-c-btn--spaced']",   
-            "deteleBoardButton" : "button[class='vs-c-btn vs-c-btn--warning vs-c-btn--spaced']",
-            "saveButton" : "button[name='save-btn']",
-            "cancelButton" : "button[name='cancel-btn']"
-        }
+  "boradSideMenu": {
+    "productBacklog": "ul[class='vs-c-list'] > li:nth-of-type(1) > span > div > a[class='vs-c-site-logo']",
+    "stats": "ul[class='vs-c-list'] > li:nth-of-type(2) > span > div > a[class='vs-c-site-logo']",
+    "history": "ul[class='vs-c-list'] > li:nth-of-type(3) > span > div > a[class='vs-c-site-logo']",
+    "labels": "ul[class='vs-c-list'] > li:nth-of-type(4) > span > div > a[class='vs-c-site-logo']",
+    "files": "ul[class='vs-c-list'] > li:nth-of-type(5) > span > div > a[class='vs-c-site-logo']",
+    "documents": "ul[class='vs-c-list'] > li:nth-of-type(6) > span > div > a[class='vs-c-site-logo']",
+    "worklogs": "ul[class='vs-c-list'] > li:nth-of-type(7) > span > div > a[class='vs-c-site-logo']",
+    "team": "ul[class='vs-c-list'] > li:nth-of-type(8) > span > div > a[class='vs-c-site-logo']",
+    "trash": "ul[class='vs-c-list'] > li:nth-of-type(9) > span > div > a[class='vs-c-site-logo']",
+    "configureBoard": {
+      "configureBoardButton": "ul[class='vs-c-list'] > li:nth-of-type(10)",
+      "boardTitleInput": "input[name='name']",
+      "boardCodeInput": "input[name='code']",
+      "boradDescription": "textarea[name='description']",
+      "updateBoardButton": "span[class='vs-c-loading-spinner vs-c-submit-button-loading']",
+      "myOrganizadtionDropdown": ".el-dropdown.el-select.vs-c-dropdown-underline > .el-input > .el-input__inner",
+      "boradTypeDropdown": "div[class='vs-c-dropdown-underline el-dropdown'] > button[class='vs-c-btn vs-c-btn--link']",
+      "uploadLogo": "div[class='vs-c-img--avatar vs-c-img--board-avatar-lg']",
+      "archivedButton": "button[class='vs-c-btn vs-c-btn--success vs-c-btn--spaced']",
+      "deleteButton": "button[class='vs-c-btn vs-c-btn--warning vs-c-btn--spaced']",
+      "saveButton": "button[name='save-btn']",
+      "cancelButton": "button[name='cancel-btn']"
     }
+  }
 }
