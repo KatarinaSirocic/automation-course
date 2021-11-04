@@ -90,7 +90,7 @@ describe("Login", () => {
   });
 
   it("Valid login", () => {
-    authModule.login({ email: user.email() });
+    authModule.login({});
   });
 
   it("Logout", () => {

@@ -18,7 +18,7 @@ describe("Register", () => {
     cy.clearCookies();
   });
 
-  it.only("Register: Empty fields and checkbox not checked", () => {
+  it("Register: Empty fields and checkbox not checked", () => {
     authModule.register({
       email: "",
       password: "",
@@ -85,27 +85,10 @@ describe("Register", () => {
         .and("have.css", "color", "rgb(187, 57, 22)");
   });
 
-  // it("Register: Checkbox not checked", () => {
-  //   cy.get(signUpPage.emailInput).should("be.visible").type(data.user.email);
-  //   cy.get(signUpPage.emailInput).type(data.user.password);
-  //   cy.get(signUpPage.numberOfUsersInput)
-  //     .clear()
-  //     .type(data.user.validNmberOfUsers);
-  //   cy.get(signUpPage.checkbox).click();
-  //   cy.get(signUpPage.submitButton).click();
-  //   cy.get(signUpPage.validationMessage)
-  //     .eq(3)
-  //     .should(
-  //       "have.text",
-  //       "The agree to terms and privacy policy field is required"
-  //     )
-  //     .and("have.css", "color", "rgb(187, 57, 22)");
-  // });
-
   it("Register: Valid registration", () => {
-    authModule.register({ email: user.email, password: user.password });
+    authModule.register({});
     authModule.logout();
-    authModule.login({ email: user.email, password: user.password });
+    authModule.login({});
     cy.wait(2000);
     authModule.finishRegister();
   });
