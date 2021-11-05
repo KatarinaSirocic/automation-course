@@ -27,7 +27,7 @@ describe("CRUD Organization", () => {
   });
 
   it("Edit Organization", () => {
-    organizationModule.editOrganization({});
+    organizationModule.editOrganization();
     organizationModule.updateMessage.should(
       "have.text",
       validationMessages.organizationUpdated
@@ -38,8 +38,8 @@ describe("CRUD Organization", () => {
       .should("have.text", data.organization.changedOrganizationName);
   });
 
-  // after("Delete created Organization", () => {
-  //   cy.visit("/my-organizations");
-  //   organizationModule.deleteOrganization();
-  // });
+  after("Delete created Organization", () => {
+    cy.visit("/my-organizations");
+    organizationModule.deleteOrganization();
+  });
 });

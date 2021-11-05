@@ -17,7 +17,7 @@ module.exports = {
     return cy.get("input[id='kanban-board-radio']");
   },
   get configureButton() {
-    return cy.get("li:nth-of-type(10) > span > div > .vs-c-site-logo");
+    return cy.get("[data-cy='board-configuration']");
   },
 
   createBoard({ boardName = data.board.boardName }) {
@@ -52,7 +52,8 @@ module.exports = {
   deleteBoard() {
     cy.intercept("DELETE", `**/boards/${boardID}`).as("deleteBoard");
     sideBarModule.createdBoard.click();
-    this.configureButton.click({ force: true });
+    this.configureButton.click();
+    cy.wait(2000);
     commonModule.deleteButton.click();
     commonModule.saveButton.click();
     cy.wait("@deleteBoard").then((intercept) => {

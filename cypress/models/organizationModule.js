@@ -13,15 +13,13 @@ module.exports = {
     return cy.get("h2[class='vs-c-my-organization__title']");
   },
   get getOrganization() {
-    return cy.get(
-      ".vs-c-my-organizations-item-wrapper > div:nth-of-type(2) .vs-c-img--avatar.vs-c-my-organization__avatar > span"
-    );
+    return cy.get(".vs-c-list__btn.vs-c-list__organisation");
   },
   get updateMessage() {
     return cy.get("div[class='el-message']");
   },
   get configureButton() {
-    cy.get("li:nth-of-type(10) > span > div > .vs-c-site-logo");
+    return cy.get("[data-cy='organization-configuration']");
   },
 
   createOrganization({ nameInput = data.organization.organizationName }) {
@@ -44,37 +42,36 @@ module.exports = {
     commonModule.cancelButton.click();
   },
 
-  // editOrganization() {
-  //   cy.intercept("PUT", `**/organizations/${organizationID}`).as(
-  //     "editOrganization"
-  //   );
-  //   navigationModule.myOrganizations.click();
-  //   this.getOrganization.click();
-  //   cy.wait(2000);
-  //   commonModule.okButton.click();
-  //   this.configureButton.click();
-  //   commonModule.nameInput
-  //     .clear()
-  //     .type(data.organization.changedOrganizationName);
-  //   commonModule.submitButton.eq(0).click();
+  editOrganization() {
+    cy.intercept("PUT", `**/organizations/${organizationID}`).as(
+      "editOrganization"
+    );
+    console.log(organizationID);
+    navigationModule.myOrganizations.click();
+    this.getOrganization.eq(1).click();
+    commonModule.okButton.click();
+    this.configureButton.click();
+    commonModule.nameInput
+      .clear()
+      .type(data.organization.changedOrganizationName);
+    commonModule.submitButton.eq(0).click();
 
-  //   cy.wait("@editOrganization").then((intercept) => {
-  //     expect(intercept.response.statusCode).to.eql(200);
-  //   });
-  // },
+    cy.wait("@editOrganization").then((intercept) => {
+      expect(intercept.response.statusCode).to.eql(200);
+    });
+  },
 
-  // deleteOrganization() {
-  //   cy.intercept("POST", `**/organizations/${organizationID}`).as(
-  //     "deleteOrganization"
-  //   );
-  //   this.getOrganization.click();
-  //   this.configureButton.click();
-  //   cy.wait(3000);
-  //   commonModule.deleteButton.click();
-  //   commonModule.password.type(data.user.password);
-  //   commonModule.saveButton.click();
-  //   cy.wait("@deleteOrganization").then((intercept) => {
-  //     expect(intercept.response.statusCode).to.eql(201);
-  //   });
-  // },
+  deleteOrganization() {
+    cy.intercept("POST", `**/organizations/${organizationID}`).as(
+      "deleteOrganization"
+    );
+    this.getOrganization.eq(1).click();
+    this.configureButton.click();
+    commonModule.deleteButton.click();
+    commonModule.password.type(data.user.password);
+    commonModule.saveButton.click();
+    cy.wait("@deleteOrganization").then((intercept) => {
+      expect(intercept.response.statusCode).to.eql(201);
+    });
+  },
 };
