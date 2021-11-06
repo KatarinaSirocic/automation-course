@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/KatarinaSirocic/automation-course#readme",
   "dependencies": {
-    "cypress": "^8.5.0"
+    "cypress": "^8.5.0",
+    "faker": "^5.5.3"
   }
 }

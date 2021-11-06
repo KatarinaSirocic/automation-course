@@ -1,0 +1,10 @@
+{
+  "mustBeValidEmail": "The email field must be a valid email",
+  "requiredPassword": "The password field is required",
+  "wrongCombination": "Oops! Your email/password combination is incorrect",
+  "password5characters": "The password field must be at least 5 characters",
+  "requiredNumberOfUsers": "The number of users field is required",
+  "invalidNumberOfUsers": "The number of users must be between 1 and 10",
+  "requiredTermsAndConditions": "The agree to terms and privacy policy field is required",
+  "organizationUpdated": "Successfully updated the Organization name."
+}
