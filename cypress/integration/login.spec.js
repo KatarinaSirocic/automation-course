@@ -85,7 +85,7 @@ describe("Login", () => {
     authModule.login({ password: data.invalidUser.wrongPassword });
     authModule.mainErrorMessage
       .should("be.visible")
-      .should("have.text", validationMessages.wrongCombination)
+      .and("have.text", validationMessages.wrongCombination)
       .and("have.css", "color", "rgb(187, 57, 22)");
   });
 
