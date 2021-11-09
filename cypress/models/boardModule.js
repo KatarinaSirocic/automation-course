@@ -56,9 +56,7 @@ module.exports = {
     cy.wait(2000);
     commonModule.deleteButton.click();
     commonModule.saveButton.click();
-    cy.wait("@deleteBoard").then((intercept) => {
-      expect(intercept.response.statusCode).to.eql(200);
-      commonModule.okButton.click();
-    });
+    cy.statusCode("@deleteBoard", 200);
+    commonModule.okButton.click();
   },
 };

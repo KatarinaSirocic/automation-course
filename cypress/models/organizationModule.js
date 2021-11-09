@@ -55,10 +55,9 @@ module.exports = {
       .clear()
       .type(data.organization.changedOrganizationName);
     commonModule.submitButton.eq(0).click();
+    cy.wait(2000);
 
-    cy.wait("@editOrganization").then((intercept) => {
-      expect(intercept.response.statusCode).to.eql(200);
-    });
+    cy.statusCode("@editOrganization", 200);
   },
 
   deleteOrganization() {
@@ -70,8 +69,6 @@ module.exports = {
     commonModule.deleteButton.click();
     commonModule.password.type(data.user.password);
     commonModule.saveButton.click();
-    cy.wait("@deleteOrganization").then((intercept) => {
-      expect(intercept.response.statusCode).to.eql(201);
-    });
+    cy.statusCode("@deleteOrganization", 201);
   },
 };

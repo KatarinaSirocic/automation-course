@@ -90,11 +90,11 @@ describe("Login", () => {
   });
 
   it("Valid login", () => {
-    authModule.login({});
+    cy.validLogin();
   });
 
   it("Logout", () => {
-    authModule.login({});
+    cy.validLogin();
     authModule.logout();
     cy.url().should("contain", "/login");
   });

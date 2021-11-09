@@ -6,7 +6,7 @@ import navigationModule from "../models/navigationModule";
 describe("CRUD Board", () => {
   before("Login and create organization", () => {
     cy.visit("/");
-    authModule.login({});
+    cy.validLogin();
     organizationModule.createOrganization({});
   });
   after("Delete board", () => {
