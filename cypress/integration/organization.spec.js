@@ -8,7 +8,7 @@ import validationMessages from "../fixtures/validationMessages.json";
 describe("CRUD Organization", () => {
   beforeEach("Login", () => {
     cy.visit("/");
-    authModule.login({});
+    cy.validLogin();
   });
 
   it("Cancel Create Organization", () => {
