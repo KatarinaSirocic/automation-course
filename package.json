@@ -4,7 +4,9 @@
   "description": "automation course",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "./node_modules/.bin/cypress open"
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cy:stage": "cypress open --env fileConfig=stage",
+    "cy:cypress-stage": "cypress open --env fileConfig=cypress-stage"
   },
   "repository": {
     "type": "git",
