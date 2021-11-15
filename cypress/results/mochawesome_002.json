@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-15T15:39:53.886Z",
+    "end": "2021-11-15T15:40:18.454Z",
+    "duration": 24568,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dcb03baa-12e3-42c5-8b25-8735b1bedc3d",
+      "title": "",
+      "fullFile": "cypress/integration/organization.spec.js",
+      "file": "cypress/integration/organization.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "62aee227-f1dc-492c-8a9c-5b6ce358e151",
+          "title": "CRUD Organization",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cancel Create Organization",
+              "fullTitle": "CRUD Organization Cancel Create Organization",
+              "timedOut": null,
+              "duration": 6866,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_organizationModule[\"default\"].cancelCreateOrganization({});",
+              "err": {},
+              "uuid": "a380fd5b-2624-404c-8df2-15e02ebc308d",
+              "parentUUID": "62aee227-f1dc-492c-8a9c-5b6ce358e151",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create Organization",
+              "fullTitle": "CRUD Organization Create Organization",
+              "timedOut": null,
+              "duration": 6152,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_organizationModule[\"default\"].createOrganization({});\n_navigationModule[\"default\"].myOrganizations.click();\n_organizationModule[\"default\"].organizationTitle.eq(1).should(\"have.text\", _data[\"default\"].organization.organizationName);\n_sideBarModule[\"default\"].organizationTitle.eq(1).should(\"contain\", _data[\"default\"].organization.organizationName);",
+              "err": {},
+              "uuid": "c44d0eec-4b0a-4cd4-b758-d003e56b865f",
+              "parentUUID": "62aee227-f1dc-492c-8a9c-5b6ce358e151",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Edit Organization",
+              "fullTitle": "CRUD Organization Edit Organization",
+              "timedOut": null,
+              "duration": 8051,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_organizationModule[\"default\"].editOrganization();\n_organizationModule[\"default\"].updateMessage.should(\"have.text\", _validationMessages[\"default\"].organizationUpdated);\n_navigationModule[\"default\"].myOrganizations.click();\n_organizationModule[\"default\"].organizationTitle.eq(1).should(\"have.text\", _data[\"default\"].organization.changedOrganizationName);",
+              "err": {},
+              "uuid": "38738795-db0c-4615-a23a-d4cae367a0a7",
+              "parentUUID": "62aee227-f1dc-492c-8a9c-5b6ce358e151",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a380fd5b-2624-404c-8df2-15e02ebc308d",
+            "c44d0eec-4b0a-4cd4-b758-d003e56b865f",
+            "38738795-db0c-4615-a23a-d4cae367a0a7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21069,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
