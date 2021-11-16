@@ -6,7 +6,8 @@
   "scripts": {
     "cypress:open": "./node_modules/.bin/cypress open",
     "cy:stage": "cypress open --env fileConfig=stage",
-    "cy:cypress-stage": "cypress open --env fileConfig=cypress-stage"
+    "cy:cypress-stage": "cypress open --env fileConfig=cypress-stage",
+    "cy:reporting": "node scripts/test.js"
   },
   "repository": {
     "type": "git",
