@@ -19,5 +19,8 @@
   "dependencies": {
     "cypress": "^8.5.0",
     "faker": "^5.5.3"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8"
   }
 }

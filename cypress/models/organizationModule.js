@@ -68,7 +68,7 @@ module.exports = {
     this.configureButton.click();
     commonModule.deleteButton.click();
     commonModule.password.type(data.user.password);
-    commonModule.saveButton.click();
+    commonModule.saveButton.contains("Yes").click();
     cy.statusCode("@deleteOrganization", 201);
   },
 };
