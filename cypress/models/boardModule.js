@@ -19,6 +19,11 @@ module.exports = {
   get configureButton() {
     return cy.get("[data-cy='board-configuration']");
   },
+  get uploadBoradLogo() {
+    return cy.get(
+      "a[class='vs-c-btn vs-c-btn--rounded-square vs-u-width--full']"
+    );
+  },
 
   createBoard({ boardName = data.board.boardName }) {
     cy.intercept("POST", "/api/v2/boards").as("createBoard");
@@ -28,6 +33,9 @@ module.exports = {
     commonModule.nextButton.click();
     this.scrumRadioButton.click({ force: true });
     commonModule.nextButton.click();
+    const filePath = "../fixtures/vndly_logo.jpg";
+    this.uploadBoradLogo.attachFile(filePath, { subjectType: "drag-n-drop" });
+    commonModule.saveButton.click();
     commonModule.nextButton.click();
     commonModule.nextButton.click();
     cy.wait("@createBoard").then((intercept) => {
@@ -55,7 +63,7 @@ module.exports = {
     this.configureButton.click();
     cy.wait(2000);
     commonModule.deleteButton.click();
-    commonModule.saveButton.click();
+    commonModule.saveButton.contains("Yes").click();
     cy.statusCode("@deleteBoard", 200);
     commonModule.okButton.click();
   },
