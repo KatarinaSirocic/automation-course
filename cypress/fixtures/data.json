@@ -24,6 +24,7 @@
   },
   "organization": {
     "organizationName": "Organization1",
+    "nameMoreThen255char": "FzFsUX8uYgMxva9W7DbMhH3GKc7nnWzYH5YS7RXuN6WIWFaqLDry4oPfYgnr37Z5aLzkjO4xcMYpfh7t1mMqM1Qo3VSoOsCHbNA02C43zFkHZWXErLFSHPZ8ZXAdS7hOjTL2NkQ73delOF66nRDTdvxAG3gX9IiFBbPeBcUkPtvlC7SeqdShiaketjHcrMl4a9mnRc7ezHe1kOOc0zmY7fAPF5Cz367wpkD9tFtD4DfNW4YZeCAQl9C41EKWJSV9",
     "changedOrganizationName": "123"
   },
   "board": {
