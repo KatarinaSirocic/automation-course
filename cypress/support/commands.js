@@ -1,5 +1,6 @@
 import data from "../fixtures/data.json";
 import authModule from "../models/authModule";
+import "cypress-file-upload";
 
 Cypress.Commands.add("statusCode", (alias, statusCode) => {
   cy.wait(alias).then((intercept) => {
