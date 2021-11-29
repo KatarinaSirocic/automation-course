@@ -4,7 +4,10 @@
   "description": "automation course",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "./node_modules/.bin/cypress open"
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cy:stage": "cypress open --env fileConfig=stage",
+    "cy:cypress-stage": "cypress open --env fileConfig=cypress-stage",
+    "cy:reporting": "node scripts/test.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +24,10 @@
     "faker": "^5.5.3"
   },
   "devDependencies": {
+    "fs-extra": "^10.0.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^6.0.1",
     "cypress-file-upload": "^5.0.8"
   }
 }

@@ -1,0 +1,224 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 6,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-11-15T15:40:34.494Z",
+    "end": "2021-11-15T15:41:15.779Z",
+    "duration": 41285,
+    "testsRegistered": 7,
+    "passPercent": 85.71428571428571,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fdbad77d-3820-4d0a-840b-6b801c84b3f5",
+      "title": "",
+      "fullFile": "cypress/integration/regrister.spec.js",
+      "file": "cypress/integration/regrister.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d0d8c305-1996-45c4-ac82-22a786e703eb",
+          "title": "Register",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register: Empty fields and checkbox not checked",
+              "fullTitle": "Register Register: Empty fields and checkbox not checked",
+              "timedOut": null,
+              "duration": 7337,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_authModule[\"default\"].register({\n  email: \"\",\n  password: \"\",\n  numberOfUsers: \"\",\n  checkbox: false\n}), _authModule[\"default\"].errorMessage.eq(0).should(\"have.text\", _validationMessages[\"default\"].mustBeValidEmail).and(\"have.css\", \"color\", \"rgb(187, 57, 22)\"), _authModule[\"default\"].errorMessage.eq(1).should(\"have.text\", _validationMessages[\"default\"].requiredPassword).and(\"have.css\", \"color\", \"rgb(187, 57, 22)\"), _authModule[\"default\"].errorMessage.eq(2).should(\"have.text\", _validationMessages[\"default\"].requiredNumberOfUsers).and(\"have.css\", \"color\", \"rgb(187, 57, 22)\");\n_authModule[\"default\"].errorMessage.eq(3).should(\"have.text\", _validationMessages[\"default\"].requiredTermsAndConditions).and(\"have.css\", \"color\", \"rgb(187, 57, 22)\");",
+              "err": {},
+              "uuid": "da6e4a2f-a66d-40e6-b2f7-7a3932bd52a7",
+              "parentUUID": "d0d8c305-1996-45c4-ac82-22a786e703eb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register: Email more then 255 characters",
+              "fullTitle": "Register Register: Email more then 255 characters",
+              "timedOut": null,
+              "duration": 7916,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_authModule[\"default\"].register({\n  email: _data[\"default\"].invalidUser.emailMoreThen255char\n}), _authModule[\"default\"].errorMessage.eq(0).should(\"have.text\", _validationMessages[\"default\"].mustBeValidEmail).and(\"have.css\", \"color\", \"rgb(187, 57, 22)\");",
+              "err": {},
+              "uuid": "08afca44-39b1-47fe-88df-50d87e726cf9",
+              "parentUUID": "d0d8c305-1996-45c4-ac82-22a786e703eb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register: No body email",
+              "fullTitle": "Register Register: No body email",
+              "timedOut": null,
+              "duration": 3178,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_authModule[\"default\"].register({\n  email: _data[\"default\"].invalidUser.noBodyemail\n}), _authModule[\"default\"].errorMessage.eq(0).should(\"have.text\", _validationMessages[\"default\"].mustBeValidEmail).and(\"have.css\", \"color\", \"rgb(187, 57, 22)\");",
+              "err": {},
+              "uuid": "1387d3cf-5367-43b6-9836-e6b42212d4f5",
+              "parentUUID": "d0d8c305-1996-45c4-ac82-22a786e703eb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register: No @ sign email",
+              "fullTitle": "Register Register: No @ sign email",
+              "timedOut": null,
+              "duration": 4281,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_authModule[\"default\"].register({\n  email: _data[\"default\"].invalidUser.noAtSignEmail\n}), _authModule[\"default\"].errorMessage.eq(0).should(\"have.text\", _validationMessages[\"default\"].mustBeValidEmail).and(\"have.css\", \"color\", \"rgb(187, 57, 22)\");",
+              "err": {},
+              "uuid": "22584c5f-4c8a-4494-8b60-c38afc906163",
+              "parentUUID": "d0d8c305-1996-45c4-ac82-22a786e703eb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register: Invalid password",
+              "fullTitle": "Register Register: Invalid password",
+              "timedOut": null,
+              "duration": 2823,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_authModule[\"default\"].register({\n  password: _data[\"default\"].invalidUser.invalidPassword\n}), _authModule[\"default\"].errorMessage.eq(1).should(\"have.text\", _validationMessages[\"default\"].password5characters).and(\"have.css\", \"color\", \"rgb(187, 57, 22)\");",
+              "err": {},
+              "uuid": "152df8b9-953e-40fb-ae94-0f060869a0de",
+              "parentUUID": "d0d8c305-1996-45c4-ac82-22a786e703eb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register: Invalid number of users",
+              "fullTitle": "Register Register: Invalid number of users",
+              "timedOut": null,
+              "duration": 3363,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_authModule[\"default\"].register({\n  numberOfUsers: _data[\"default\"].invalidUser.invalidNumberOfUsers\n}), _authModule[\"default\"].errorMessage.eq(2).should(\"have.text\", _validationMessages[\"default\"].invalidNumberOfUsers).and(\"have.css\", \"color\", \"rgb(187, 57, 22)\");",
+              "err": {},
+              "uuid": "05eba239-b25d-4807-88ce-a85de2bf1c9a",
+              "parentUUID": "d0d8c305-1996-45c4-ac82-22a786e703eb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Register: Valid registration",
+              "fullTitle": "Register Register: Valid registration",
+              "timedOut": null,
+              "duration": 8690,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_authModule[\"default\"].register({});\n_authModule[\"default\"].logout();\n_authModule[\"default\"].login({});\ncy.wait(2000);\n_authModule[\"default\"].finishRegister();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `img[class='vs-u-img--round vs-c-user-avatar']`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `img[class='vs-u-img--round vs-c-user-avatar']`, but never found it.\n    at Object.logout (https://cypress-api.vivifyscrum-stage.com/__cypress/tests?p=cypress/integration/regrister.spec.js:342:47)\n    at Context.eval (https://cypress-api.vivifyscrum-stage.com/__cypress/tests?p=cypress/integration/regrister.spec.js:200:28)",
+                "diff": null
+              },
+              "uuid": "baee7e6f-953f-454e-9eb7-2aefd3dc6f12",
+              "parentUUID": "d0d8c305-1996-45c4-ac82-22a786e703eb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "da6e4a2f-a66d-40e6-b2f7-7a3932bd52a7",
+            "08afca44-39b1-47fe-88df-50d87e726cf9",
+            "1387d3cf-5367-43b6-9836-e6b42212d4f5",
+            "22584c5f-4c8a-4494-8b60-c38afc906163",
+            "152df8b9-953e-40fb-ae94-0f060869a0de",
+            "05eba239-b25d-4807-88ce-a85de2bf1c9a"
+          ],
+          "failures": [
+            "baee7e6f-953f-454e-9eb7-2aefd3dc6f12"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 37588,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

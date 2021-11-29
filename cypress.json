@@ -1,3 +1,9 @@
 {
-    "baseUrl" : "https://stage.vivifyscrum.com"
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/results",
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
 }
