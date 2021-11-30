@@ -2,7 +2,7 @@ import userApi from "../api/user";
 import organizationApi from "../api/organization";
 import consoleColor from "../support/consoleColor";
 
-describe("Api testing", () => {
+describe("Api Organization testing", () => {
   let userToken;
   let allOrganizations;
   before("Login beofre all tests", () => {
@@ -12,24 +12,11 @@ describe("Api testing", () => {
   });
 
   after("Delete all organizations", () => {
-    //for (var i = 0; i <= allOrganizations.length; i++) {
-    //   organizationApi.delete({
-    //     token: userToken,
-    //     organizationId: allOrganizations[i].id,
-    //     testMessage: "All orgs are deleted",
-    //   });
-    //}
     allOrganizations.forEach((el) =>
       organizationApi.delete({ token: userToken, organizationId: el.id })
     );
   });
 
-  it("Get all organizations", () => {
-    organizationApi.get({ token: userToken }).then((allOrgs) => {
-      console.log(allOrgs);
-      allOrganizations = allOrgs;
-    });
-  });
   let organizationId;
   it("Create organization", () => {
     organizationApi
@@ -46,12 +33,17 @@ describe("Api testing", () => {
       testMessage: "Successfully deleted",
     });
   });
-
-  //   it("Delete organization", () => {
-  //     organizationApi.delete({
-  //       token: userToken,
-  //       organizationId: organizationId,
-  //       testMessage: "Successfully deleted",
-  //     });
+  it("Get all organizations", () => {
+    organizationApi.get({ token: userToken }).then((allOrgs) => {
+      console.log(allOrgs);
+      allOrganizations = allOrgs;
+    });
+  });
+  // it("Delete organization", () => {
+  //   organizationApi.delete({
+  //     token: userToken,
+  //     organizationId: organizationId,
+  //     testMessage: "Successfully deleted",
   //   });
+  // });
 });
