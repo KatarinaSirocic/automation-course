@@ -16,7 +16,6 @@ describe("API Board testing", () => {
   });
 
   it("Create Organization", () => {
-    console.log(userToken);
     organizationApi
       .post({
         token: userToken,
@@ -28,7 +27,6 @@ describe("API Board testing", () => {
   });
 
   it("Create Board with a name > 50 characters", () => {
-    console.log(userToken);
     boardApi.post({
       token: userToken,
       organizationId: orgId,
@@ -39,7 +37,6 @@ describe("API Board testing", () => {
   });
 
   it("Create Board with an empty name", () => {
-    console.log(userToken);
     boardApi.post({
       token: userToken,
       organizationId: orgId,
@@ -57,7 +54,6 @@ describe("API Board testing", () => {
         testMessage: "Successfully created board",
       })
       .then((response) => {
-        console.log(response);
         boardCode = response.code;
         boardId = response.id;
       });

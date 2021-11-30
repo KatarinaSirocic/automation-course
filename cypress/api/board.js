@@ -1,5 +1,8 @@
 import faker from "faker";
 import color from "../support/consoleColor";
+import env from "../configFiles/api.json";
+
+const apiEnv = env.baseUrl;
 
 module.exports = {
   post({
@@ -14,7 +17,7 @@ module.exports = {
       .request({
         failOnStatusCode: false,
         method: "POST",
-        url: "https://cypress-api.vivifyscrum-stage.com/api/v2/boards",
+        url: `${apiEnv}/api/v2/boards`,
         statusCode: 201,
         body: {
           configuration_board_id: null,
@@ -50,7 +53,7 @@ module.exports = {
       .request({
         failOnStatusCode: false,
         method: "PUT",
-        url: `https://cypress-api.vivifyscrum-stage.com/api/v2/boards/${boardId}`,
+        url: `${apiEnv}/api/v2/boards/${boardId}`,
         statusCode: 200,
         body: {
           code: boardCode,
@@ -78,7 +81,7 @@ module.exports = {
       .request({
         failOnStatusCode: false,
         method: "GET",
-        url: `https://cypress-api.vivifyscrum-stage.com/api/v2/boards/${boardId}`,
+        url: `${apiEnv}/api/v2/boards/${boardId}`,
         statusCode: 200,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -105,7 +108,7 @@ module.exports = {
       .request({
         failOnStatusCode: false,
         method: "GET",
-        url: `https://cypress-api.vivifyscrum-stage.com/api/v2/organizations/${organizationId}/boards-data`,
+        url: `${apiEnv}/api/v2/organizations/${organizationId}/boards-data`,
         statusCode: 200,
         headers: {
           Authorization: `Bearer ${token}`,
@@ -126,7 +129,7 @@ module.exports = {
       .request({
         failOnStatusCode: false,
         method: "DELETE",
-        url: `https://cypress-api.vivifyscrum-stage.com/api/v2/boards/${boardId}`,
+        url: `${apiEnv}/api/v2/boards/${boardId}`,
         statusCode: 200,
         headers: {
           Authorization: `Bearer ${token}`,

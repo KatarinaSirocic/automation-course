@@ -29,6 +29,7 @@ describe("API Board testing", () => {
   });
 
   it("Create Board", () => {
+    console.log(userToken);
     boardApi
       .post({
         token: userToken,
@@ -36,14 +37,12 @@ describe("API Board testing", () => {
         testMessage: "Successfully created board",
       })
       .then((response) => {
-        console.log(response);
         boardCode = response.code;
         boardId = response.id;
       });
   });
 
   it("Update Board", () => {
-    console.log(userToken);
     boardApi.put({
       boardId: boardId,
       token: userToken,
@@ -71,7 +70,6 @@ describe("API Board testing", () => {
       })
       .then((response) => {
         allBoards = response;
-        console.log(allBoards);
       });
   });
 
