@@ -24,13 +24,14 @@
   },
   "organization": {
     "organizationName": "Organization1",
-    "nameMoreThen255char": "FzFsUX8uYgMxva9W7DbMhH3GKc7nnWzYH5YS7RXuN6WIWFaqLDry4oPfYgnr37Z5aLzkjO4xcMYpfh7t1mMqM1Qo3VSoOsCHbNA02C43zFkHZWXErLFSHPZ8ZXAdS7hOjTL2NkQ73delOF66nRDTdvxAG3gX9IiFBbPeBcUkPtvlC7SeqdShiaketjHcrMl4a9mnRc7ezHe1kOOc0zmY7fAPF5Cz367wpkD9tFtD4DfNW4YZeCAQl9C41EKWJSV9",
+    "nameMoreThen50char": "W1alqR2a4IgJ9YdgltOkHdZDbuNmwFeeHmmLTOi8h0XMsyQSiAM",
     "changedOrganizationName": "123"
   },
   "board": {
     "boardName": "Board 1",
     "changedBoardName": "Test Board",
     "boardCode": "1111",
+    "invalidBoardCode": "AAAAA",
     "boardDescription": "This is description for testing purpose"
   }
 }

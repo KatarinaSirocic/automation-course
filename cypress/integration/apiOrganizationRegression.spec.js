@@ -20,11 +20,11 @@ describe("Api testing", () => {
     });
   });
 
-  it("Create organization with name more then 255 char", () => {
+  it("Create organization with name more then 50 char", () => {
     organizationApi.post({
       token: userToken,
-      orgName: data.organization.nameMoreThen255char,
-      testMessage: "Cannot create org with a name > 255 characters",
+      orgName: data.organization.nameMoreThen50char,
+      testMessage: "Cannot create org with a name > 50 characters",
       statusCode: 401,
     });
   });
