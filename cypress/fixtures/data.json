@@ -33,5 +33,15 @@
     "boardCode": "1111",
     "invalidBoardCode": "AAAAA",
     "boardDescription": "This is description for testing purpose"
+  },
+  "accounts": {
+    "andrija": {
+      "email": "andrija989@gmail.com",
+      "password": "Cuca5555"
+    },
+    "kaca": {
+      "email": "ajderadi1@gmail.com",
+      "password": "1234567"
+    }
   }
 }
