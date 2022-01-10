@@ -28,7 +28,7 @@ module.exports = {
   createBoard({ boardName = data.board.boardName }) {
     cy.intercept("POST", "/api/v2/boards").as("createBoard");
     navigationModule.myOrganizations.click();
-    this.addBoradButton.eq(1).click({ force: true });
+    this.addBoradButton.eq(0).click({ force: true });
     commonModule.nameInput.type(boardName);
     commonModule.nextButton.click();
     this.scrumRadioButton.click({ force: true });

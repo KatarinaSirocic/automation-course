@@ -33,5 +33,11 @@
     "boardCode": "1111",
     "invalidBoardCode": "AAAAA",
     "boardDescription": "This is description for testing purpose"
+  },
+  "task": {
+    "taskName": "This is a task name",
+    "taskDescription": "This is a task description",
+    "checklistName": "testing task creation",
+    "taskComment": "Lorem ipsum dolor sit amat"
   }
 }
